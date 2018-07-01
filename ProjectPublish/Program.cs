@@ -11,7 +11,7 @@ namespace ProjectPublish
         {
             Console.WriteLine("Hello World!");
 
-            var factory = new ConnectionFactory() { HostName = "localhost" };
+            var factory = new ConnectionFactory() { HostName = "10.211.55.11", UserName = "admin", Password = "1111" };
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel()) {
                 channel.QueueDeclare(queue: "TestQueue",
