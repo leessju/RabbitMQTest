@@ -12,7 +12,7 @@ namespace ProjectSubscribe
         {
             static void Main(string[] args)
             {
-                var factory = new ConnectionFactory() { HostName = "10.211.55.11", UserName = "admin", Password = "1111" };
+                var factory = new ConnectionFactory() { HostName = "nicejames.com", UserName = "nicejames", Password = "1111" };
                 using (var connection = factory.CreateConnection())
                 using (var channel = connection.CreateModel())
                 {
